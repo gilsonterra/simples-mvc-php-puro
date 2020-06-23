@@ -42,6 +42,14 @@ final class UsuarioModel extends AbstractModel
 
     public function update($id, $data)
     {
+
+        if ($this->loginExist($data['login'], $id)) {
+            return array(
+                'success' => false,
+                'message' => 'Login já foi cadastrado.'
+            );
+        }
+
         $query = sprintf('UPDATE usuarios SET nome_completo = :nome_completo, login = :login, senha = :senha, ativo = :ativo WHERE usuario_id = %s', $id);
         return $this->save($query, $data);
     }
@@ -52,10 +60,15 @@ final class UsuarioModel extends AbstractModel
         return $this->save($query);
     }
 
-    protected function loginExist($login)
+    protected function loginExist($login, $ignore = '')
     {
-        $result = $this->fetch(sprintf("SELECT count(*) total FROM usuarios WHERE login = '%s'", $login));
-        return $result['total'] >= 1;
+        $result = $this->fetch(sprintf("SELECT usuario_id FROM usuarios WHERE login = '%s'", $login));
+
+        if($ignore && $ignore == $result['usuario_id']){
+            return false;
+        }
+
+        return !empty($result);
     }
 
     public function getLastId()
