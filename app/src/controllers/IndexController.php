@@ -17,7 +17,8 @@ final class IndexController extends AbstractController
         $this->renderView('index.php');
     }
 
-    public function logout(){        
+    public function logout()
+    {
         session_destroy();
         header('Location: /login');
     }
@@ -29,12 +30,20 @@ final class IndexController extends AbstractController
         $usuario = $this->model->login($data['login'], $data['senha']);
 
         if (!empty($usuario)) {
-            $_SESSION['logado'] = $usuario;
-            $result = array(
-                'success' => true,
-                'message' => 'Usuário logado com sucesso!',
-                'data' => $usuario
-            );
+
+            if ($usuario['ativo'] != 1) {
+                $result = array(
+                    'success' => false,
+                    'message' => 'Usuário inativado!'
+                );
+            } else {
+                $_SESSION['logado'] = $usuario;
+                $result = array(
+                    'success' => true,
+                    'message' => 'Usuário logado com sucesso!',
+                    'data' => $usuario
+                );
+            }
         } else {
             $result = array(
                 'success' => false,

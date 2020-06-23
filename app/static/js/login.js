@@ -23,9 +23,7 @@ $(function() {
             }
             else{
                 toastr["success"]('Usuário autenticado com sucesso!');
-                setTimeout(() => {
-                    window.location.href = '/usuario-pesquisa';
-                }, 1000);
+                window.location.href = '/usuario-pesquisa';
             }
         })
         .always(function(){
