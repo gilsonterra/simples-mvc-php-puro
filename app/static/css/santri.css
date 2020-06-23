@@ -1,0 +1,105 @@
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+
+.cor-fonte-padrao {
+  color: #9c1d1c;
+}
+
+.container {  
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.w3-theme {
+  color: #fff !important;
+  background: #9c1d1c !important;
+  border-radius: 5px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.td-action {
+  width: 150px;  
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right {
+  float: right
+}

@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select \'cadastrar_clientes\' AS `CHAVE`,\'Cadastrar clientes\' AS `DESCRICAO` union all select \'excluir_clientes\' AS `CHAVE`,\'Excluir clientes\' AS `DESCRICAO` union all select \'cadastrar_fornecedores\' AS `CHAVE`,\'Cadastrar fornecedores\' AS `DESCRICAO` union all select \'excluir_fornecedores\' AS `CHAVE`,\'Excluir fornecedores\' AS `DESCRICAO` union all select \'cadastrar_produtos\' AS `CHAVE`,\'Cadastrar produtos\' AS `DESCRICAO` union all select \'alterar_preco_produtos\' AS `CHAVE`,\'Alterar preço de produtos\' AS `DESCRICAO`
+md5=39750b371503f5c53f9beb6953add217
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2020-06-23 03:06:21
+create-version=1
+source=select \'cadastrar_clientes\' AS `CHAVE`,\'Cadastrar clientes\' AS `DESCRICAO` union all select \'excluir_clientes\' AS `CHAVE`,\'Excluir clientes\' AS `DESCRICAO` union all select \'cadastrar_fornecedores\' AS `CHAVE`,\'Cadastrar fornecedores\' AS `DESCRICAO` union all select \'excluir_fornecedores\' AS `CHAVE`,\'Excluir fornecedores\' AS `DESCRICAO` union all select \'cadastrar_produtos\' AS `CHAVE`,\'Cadastrar produtos\' AS `DESCRICAO` union all select \'alterar_preco_produtos\' AS `CHAVE`,\'Alterar preço de produtos\' AS `DESCRICAO`
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_general_ci
+view_body_utf8=select \'cadastrar_clientes\' AS `CHAVE`,\'Cadastrar clientes\' AS `DESCRICAO` union all select \'excluir_clientes\' AS `CHAVE`,\'Excluir clientes\' AS `DESCRICAO` union all select \'cadastrar_fornecedores\' AS `CHAVE`,\'Cadastrar fornecedores\' AS `DESCRICAO` union all select \'excluir_fornecedores\' AS `CHAVE`,\'Excluir fornecedores\' AS `DESCRICAO` union all select \'cadastrar_produtos\' AS `CHAVE`,\'Cadastrar produtos\' AS `DESCRICAO` union all select \'alterar_preco_produtos\' AS `CHAVE`,\'Alterar preço de produtos\' AS `DESCRICAO`
