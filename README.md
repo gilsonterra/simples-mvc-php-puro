@@ -15,5 +15,7 @@ O docker compose irá criar 3 dockers:
  Esse projeto foi desenvolvido com conceitos da arquitetura MVC sem utilizar nenhum tipo de framework, apenas PHP puro. O objetivo de não utilizar nenhum framework foi para demostrar meus conhecimentos sobre arquitetura.
 
 ## Demo
-[Site](http://santri.nucleoassistir.com/login)
+[Demo](http://santri.nucleoassistir.com/login)
+- usuário: *bat*
+- senha: *bat*
 ![Demo](https://github.com/gilsonterra/teste-santri/blob/master/demo.gif)
