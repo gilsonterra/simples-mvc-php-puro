@@ -1,4 +1,4 @@
-# teste-santri
+# Simples MVC com php puro
 
 Para iniciar o projeto basta rodar o docker composer na pasta raiz.
 ```
